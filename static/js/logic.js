@@ -75,7 +75,7 @@ function createEarthquakes(response) {
             fillColor: getColor(earthquake.geometry.coordinates[2]),
             radius: earthquake.properties.mag^2 * 100000
         })
-        .bindPopup("<h3>Location: " + earthquake.properties.place + "<br>Magnitude: " + earthquake.properties.mag.toFixed(1) + "</h3>")
+        .bindPopup("<h3>Location: " + earthquake.properties.place + "<br>Magnitude: " + earthquake.properties.mag + "</h3>")
     // Add the object to the earthquakeObjects array.    
     earthquakeObjects.push(earthquakeLocation);
     };
